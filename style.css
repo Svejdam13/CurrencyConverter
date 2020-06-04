@@ -7,7 +7,7 @@
 }
 body{
   background: rgb(37,60,145);
-
+  background: linear-gradient(0deg, rgba(37,60,145,1) 0%, rgba(30,168,224,1) 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ body{
 }
 
 .logo{
-  width: 200px;
+  width: 300px;
 }
 h1{
   color: var(--primary-color);
@@ -40,6 +40,9 @@ input, label{
 }
 label{
   margin-bottom: 5px;
+}
+.container{
+  max-width: 400px;
 }
 .form-vert-line{
   display: flex;
@@ -72,12 +75,7 @@ label{
   width: 100%;
 }
 #amount-two{
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  width: 200px;
-  font-size: 70px;
-  text-align: left;
+  display: none;
 }
 #btn-swap{
   margin-top: 25px;
@@ -90,7 +88,7 @@ label{
   font-size: 20px;
   text-align: center;
   padding: 8px;
-  margin: 20px 0 60px 0;
+  margin: 20px 0 50px 0;
   width: 100%;
   cursor: pointer;
   color: var(--secondary-color);
@@ -111,12 +109,14 @@ label{
 .result-value{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
-.result-value p{
-  font-size: 30px;
+.only-cur{
+  font-size: 50px;
   font-weight: 800;
   letter-spacing: 1.5px;
   color: var(--primary-color);
+  margin: 35px;
 }
 .rate{
   text-align: center;

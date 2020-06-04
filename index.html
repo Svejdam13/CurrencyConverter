@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img src="img/curlogo.svg" class="logo" />
+  <img src="img/curlogo.svg" class="logo"/>
   <h1>Currency Converter</h1>
   <div class="container">
         <label for="amount-one" class="label-amount">Amount</label>
@@ -94,14 +94,13 @@
       </div>
     </div>
       <button class="btn" id="btn-con">Convert</button>
-      <div class="result-cur">1 GBP =</div>
+      <div class="result-cur" id="result-info"></div>
       <div class="result-value">
-        <input type="number" id="amount-two" placeholder="" value="29.81"/> 
-        <p>CZK</p>
+        <input type="number" id="amount-two" placeholder=""/> 
+        <div class="only-cur" id="only-cur"></div>
       </div>
       <!-- tady neni value protoze to generuje JS-->
-      <div class="rate" id="rate">1 GBP = 29.8051 CZK</div>
-    
+      <div class="rate" id="rate"></div>
     </div>
   
   <script src="script.js"></script>
